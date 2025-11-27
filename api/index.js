@@ -1,11 +1,11 @@
 import bodyParser from "body-parser";
 import express from "express";
-import { connectDB } from "./db.js";
-import { PORT, SECRET } from "./config.js";
-import { userRouter } from "./src/routes/userRoute.js";
+import { connectDB } from "../db.js";
+import { PORT, SECRET } from "../config.js";
+import { userRouter } from "../src/routes/userRoute.js";
 import session from "express-session";
-import { categoryRoute } from "./src/routes/categoryRoute.js";
-import { productRoute } from "./src/routes/productRoute.js";
+import { categoryRoute } from "../src/routes/categoryRoute.js";
+import { productRoute } from "../src/routes/productRoute.js";
 import cors from "cors";
 
 //Instancia servidor EXPRESS 
